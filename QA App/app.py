@@ -8,7 +8,7 @@ st.set_page_config(
         layout="wide"
     )
 
-os.environ["API_KEY"] = "AIzaSyCID_fEMa0fqArRp3bouVBs7ij0A7mUGBo"
+os.environ["API_KEY"] = ""
 genai.configure(api_key=os.environ["API_KEY"])
 
 def llm_query(context):
