@@ -1,1 +1,4 @@
 Introducing AskGenie: Your Instant AI-Powered Knowledge Hub, a revolutionary QA app built with the Gemini Flash API and designed with Streamlit, now live on Hugging Face Spaces. AskGenie offers users instant, precise answers to a wide array of questions, enhanced by its ability to understand and maintain the context of individual chat sessions. Whether you’re seeking detailed information on complex topics or personalized recommendations, AskGenie ensures a seamless and engaging experience. With its sleek and intuitive interface, this app transforms how you interact with information, making knowledge accessible and relevant whenever you need it.
+
+
+URL = 'https://huggingface.co/spaces/MHassan3704/question-answering-app/blob/main/requirements.txt'
