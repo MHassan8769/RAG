@@ -1,0 +1,23 @@
+name: Auto PR Creation for Issues
+
+on:
+  push:
+    branches:
+      - 'issue_*'  # This pattern matches any branch starting with "issue_"
+
+jobs:
+  auto-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: main  # The target branch where you want to merge (main)
+          head: ${{ github.ref_name }}  # The branch where the changes were made
+          title: "Auto PR for ${{ github.ref_name }}"  # PR Title with branch name
+          body: "This PR was created automatically for merging changes into the main branch from ${{ github.ref_name }}"
